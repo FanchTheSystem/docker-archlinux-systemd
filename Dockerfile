@@ -3,7 +3,7 @@ FROM archlinux/archlinux:base-devel
 ENV container docker
 
 RUN pacman -Syu --noconfirm
-RUN pacman -S systemd dbus python emacs-nox --noconfirm
+RUN pacman -S systemd dbus python emacs-nox bash-completion --noconfirm
 RUN pacman -Scc --noconfirm
 
 RUN rm \
